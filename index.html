@@ -12,33 +12,37 @@
 
     <article class="card" aria-labelledby="char-name">
         <img id="imagem" class="card__image"
-            src="https://images.unsplash.com/photo-1604725962918-3d9d2b8b6a1b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+            src="./img/loading.gif"
             alt="Foto do personagem">
 
         <div class="card__body">
             <div class="card__title">
-                <h3 id="char-name" class="name">Nome do Personagem</h3>
-                <span class="badge">Raro</span>
+                <h3 id="personagem-nome" class="name"></h3>
+                <span id="personagem-rank" class="badge"></span>
             </div>
-
+            
             <div class="meta">
                 <div>
-                    <div class="meta__label">Poder</div>
-                    <div class="meta__value">Manipulação de relâmpagos</div>
+                    <div class="meta__label">Habilidades</div>
+                    <div id="personagem-habilidade" class="meta__value">
+                        <!-- Lista ordenada <ol> ou não ordenada <ul> -->
+                        <!-- Cada item ficam dentro de uma <li> -->
+                        
+                    </div>
                 </div>
 
                 <div>
                     <div class="meta__label">Vila</div>
-                    <div class="meta__value">Vila da Folha</div>
+                    <div id="personagem-vila" class="meta__value"></div>
                 </div>
             </div>
 
-            <p class="desc">Descrição curta: um shinobi ágil conhecido por suas técnicas de raio e grande lealdade à
-                vila. Use essa área para um resumo curto e cativante.</p>
+            <p id="personagem-descricao" class="desc"></p>
 
             <div class="card__footer">
-                <button class="accent-btn" aria-label="Ver mais detalhes" onclick="mostrarPersonagem();">Escolher Personagem</button>
-                <small style="color:var(--muted); font-size:.8rem">Nível: 47</small>
+                <button class="accent-btn" aria-label="Ver mais detalhes" onclick="mostrarPersonagem();">Escolher
+                    Personagem</button>
+                <small id="personagem-poder" style="color:var(--muted); font-size:.8rem"></small>
             </div>
         </div>
     </article>

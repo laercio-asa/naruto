@@ -10,18 +10,20 @@
 
 /* Layout centralizado na página */
 body {
+    background-image: url(../img/background.png);
+    background-size: cover;
     margin: 0;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #f5f7fb 0%, #eef2ff 100%);
+    /* background: linear-gradient(180deg, #f5f7fb 0%, #eef2ff 100%);  */
     padding: 24px;
 }
 
 /* Card */
 .card {
-    width: 400px;
+    width: 550px;
     background: var(--card-bg);
     border-radius: var(--card-radius);
     box-shadow: var(--shadow);
